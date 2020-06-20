@@ -1,25 +1,142 @@
-Devicde Changelog:
-
-[20-Mar-2020]
-1: Reverted FB to previous state.
-2: Fixed lock/ambient screen batter bar overlaping on FP.
+====================
+     06-20-2020
+====================
 
 
-[19-Mar-2020]
-1: Enable vibration strength overlat (Settings > accessibility > Vibration & haptic strength)
-2: Upadates vendor to latest stable OOS.
-3: Updates OP prebuilts (Camera,Gallery, Etc)
-4: Removed gradients accent. (WaWas creating weird UI issues)
-5: Fixed reboot to recovery bug.
-6: There are few improvements in lockscreen screen FP. Other colors are working but on above 75% brightness,
-7: Enabled AOSP Color profile overay.
-8: Updated TWRP prebuilt 
-Few other improvements and fixed related to battery. 
+   * frameworks/base/
+1ae233846f2 Port face unlock feature
 
-[19-Mar-2020]
-Derpfest Changelog:
-- Merged March Security Patch (r31)
-- Let long press power turn torch off when screen is on
-- Added AGPS setting menu
-- Added Portuguesean translation to TypeClock
-- Updated French and Italian translations
+   * packages/apps/Settings/
+3a6407c000 Port face unlock feature
+
+   * vendor/aosip/
+8784ffd 1/3 Port face unlock feature
+
+====================
+     06-19-2020
+====================
+
+
+   * frameworks/base/
+b034c56e56b SystemUI: arrow keys while typing resurrection [1/2]
+
+   * packages/apps/DerpQuest/
+2ca1dca DerpQuest: One navbar switch to rule them all
+7d61217 DerpQuest: Arrow keys while typing resurrection [2/2]
+
+   * packages/apps/Matlog/
+49007ec Automatic translation import
+
+====================
+     06-18-2020
+====================
+
+
+   * packages/apps/Dialer/
+f12f25c29 Automatic translation import
+
+   * packages/apps/Etar/
+e06e35cd Etar: Properly align preferences
+bf4f066d Etar: Fix crash when opening "Quick responses"
+
+   * packages/apps/Launcher3/
+9aa833129 Automatic translation import
+
+   * packages/apps/OpenDelta/
+9e22ef7 OpenDelta: force white text on colored buttons
+
+====================
+     06-17-2020
+====================
+
+
+   * frameworks/base/
+3a3da3faaa2 SystemUI: Update custom carrier label position correctly
+eb79aa4401d overlays: Fix inactive state Wifi Icon in Circular & Filled Icon Pack
+
+   * packages/apps/DerpQuest/
+fd0d485 DerpQuest: Update RU translation (#67)
+
+   * packages/apps/OpenDelta/
+d899ff5 OpenDelta: Fix RU translation (#3)
+
+   * scripts/
+8b01ddf scripts: updater: Support new info.sh
+
+====================
+     06-16-2020
+====================
+
+
+   * frameworks/base/
+03e0b117626 FODCircleView: Add support for pressed fod layer
+85cf4e78443 Revert "FODCircleView: dispatch onPress to HAL only after dimming is applied"
+073c1cba27f SystemUI: Long press Caffeine for infinite duration
+
+   * hardware/qcom-caf/sm8150/display/
+f5e564cf sdm: mark FOD pressed layer by setting a bit on ZPOS
+
+   * packages/apps/DerpQuest/
+002ac9f DerpQuest: Actually save carrier label placement setting
+
+   * packages/services/Telecomm/
+42ac0212 Telecomm: Add a null check to custom ring vibration
+
+====================
+     06-15-2020
+====================
+
+
+   * frameworks/base/
+45303e3a0c5 overlays: Tint all power menu icons with the system accent
+
+   * frameworks/native/
+845990e28 surfaceflinger: change usageBits type to uint64_t
+20c395d89 surfaceflinger: Add support for extension lib
+
+   * scripts/
+90f5d07 scripts: updater: Adapt to new file host
+
+   * vendor/aosip/
+85562ad soong: Add flag for fod extension
+
+   * vendor/overlay/
+c1fce60 overlay: Add Derp Blue theme
+
+====================
+     06-14-2020
+====================
+
+
+   * frameworks/base/
+2a212396dd2 base: Use a proper settings validator for qs_datausage
+5b79ba6f114 SystemUI: QSHeaderDataUsage: hide usage if device is disconnected
+0cbc906e90b SystemUI: QSHeaderDataUsage: show Wi-Fi usage when connected to Wi-Fi
+0dc75ce8621 SystemUI: QSHeaderDataUsage: add icon and improve view
+d7bab8995cf SystemUI: QSHeaderDataUsage: update view immediately after change
+0ed2ea03d56 SystemUI: QSHeaderDataUsage: add ability to show daily/monthly [1/2]
+1c961970dfb SystemUI: QS Header data usage info: improve layout and view
+c208bd8b423 aosipUtils: add method to check if device is connected to Wi-Fi
+a5b6d27c50f aosipUtils: add method to get today's passed time
+61e2a229a54 aosipUtils: Add method to check for both wifi and mobile connections
+688a5f5dcde SystemUI: QS Header data usage info: don't show used
+cd19526a3a9 SystemUI: QS Header data usage info [1/2]
+ee974f8dccf base: Fix notification LED blink for missed calls
+
+   * packages/apps/DerpQuest/
+153545a DerpQuest: QSHeaderDataUsage: add ability to show daily/monthly [2/2]
+b25cc40 DerpQuest: QS Header data usage info [2/2]
+d51ce45 DerpQuest: Add DND & Rate settings to flash on call [3/3]
+
+   * packages/apps/OpenDelta/
+00e1ad0 OpenDelta: Adapt to the new file host
+
+   * prebuilts/clang/host/linux-x86/
+39c5f60d Update prebuilt Clang to r383902b.
+
+   * scripts/
+82e6c11 scripts: updater: Print diff with no pager
+
+   * system/core/
+455966eea Ignore class_{reset|start}_post_data on non-updatable APEX.
+
